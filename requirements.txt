@@ -1,0 +1,14 @@
+# Dependencies tối thiểu cho Streamlit Cloud (không có torch / litellm / redis / voice).
+streamlit
+langchain
+langchain-core
+langchain-community
+langchain-openai
+python-dotenv
+pydantic
+numpy
+tiktoken
+fastembed
+rank-bm25
+unidecode
+requests

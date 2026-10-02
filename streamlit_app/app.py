@@ -7,8 +7,18 @@ import ori_bootstrap
 
 st.set_page_config(page_title="Ori - Trợ lý bán hàng", page_icon="☕")
 
-PROJ = os.environ["ORI_PROJ"]
-USE_RERANKER = os.environ.get("ORI_USE_RERANKER", "1") == "1"
+try:
+    _secrets = dict(st.secrets)
+except Exception:
+    _secrets = {}
+
+_err = ori_bootstrap.configure_env(_secrets)
+if _err:
+    st.error(_err)
+    st.stop()
+
+PROJ = os.environ.get("ORI_PROJ") or str(Path(__file__).resolve().parent.parent / "posora-kb-assistant")
+USE_RERANKER = os.environ.get("ORI_USE_RERANKER", "0") == "1"
 
 
 @st.cache_resource(show_spinner="Đang nạp mô hình và tri thức (lần đầu mất vài phút)...")

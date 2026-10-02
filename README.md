@@ -30,3 +30,17 @@ Chạy lại project `posora-kb-assistant` trên Google Colab, không cần Redi
 - **Không đưa khoá API hay file `.env` lên repo.** Khoá được nhập khi chạy notebook.
 - Link `gradio.live` / `trycloudflare.com` là công khai và tạm thời; ai có link đều dùng được
   chatbot bằng khoá API của bạn.
+
+## Chạy trên Streamlit Cloud
+
+1. Deploy với *Main file path* = `streamlit_app/app.py`. `requirements.txt` ở thư mục gốc được cài tự động.
+2. Vào **Manage app → Settings → Secrets** và thêm (không commit khoá này lên repo):
+   ```toml
+   GROQ_API_KEY = "gsk_..."
+   # tuỳ chọn:
+   # GROQ_MODEL = "llama-3.3-70b-versatile"
+   ```
+3. Chế độ này gọi thẳng Groq (không có LiteLLM Gateway), tắt reranker và **không có NER PhoBERT**
+   (repo không chứa trọng số), nên chatbot trả lời bằng đường RAG/LLM; việc đặt món có thể kém chính xác hơn bản Colab.
+4. Mô hình embedding `multilingual-e5-large` (~2,2 GB) có thể vượt giới hạn bộ nhớ của Streamlit Cloud miễn phí.
+   Nếu app bị khởi động lại hoặc báo hết tài nguyên, hãy chạy trên Colab hoặc Hugging Face Spaces.
