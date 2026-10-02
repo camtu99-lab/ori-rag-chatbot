@@ -1,0 +1,5 @@
+# Optional but recommended for more accurate token counting.
+tiktoken>=0.7
+
+# Needed only when CONTEXT_STORE_BACKEND=redis.
+redis>=5.0

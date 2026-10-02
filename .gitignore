@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+venv/
+work/
+*.safetensors
+*.bin
+*.onnx
+*.zip
+.ipynb_checkpoints/
+.DS_Store

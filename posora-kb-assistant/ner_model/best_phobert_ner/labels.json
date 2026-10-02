@@ -1,0 +1,36 @@
+{
+  "label2id": {
+    "O": 0,
+    "B-PRODUCT": 1,
+    "I-PRODUCT": 2,
+    "B-SIZE": 3,
+    "I-SIZE": 4,
+    "B-QUANTITY": 5,
+    "I-QUANTITY": 6,
+    "B-ICE_LEVEL": 7,
+    "I-ICE_LEVEL": 8,
+    "B-SUGAR_LEVEL": 9,
+    "I-SUGAR_LEVEL": 10,
+    "B-TOPPING": 11,
+    "I-TOPPING": 12,
+    "B-MILK_ALTERNATIVE": 13,
+    "I-MILK_ALTERNATIVE": 14
+  },
+  "id2label": {
+    "0": "O",
+    "1": "B-PRODUCT",
+    "2": "I-PRODUCT",
+    "3": "B-SIZE",
+    "4": "I-SIZE",
+    "5": "B-QUANTITY",
+    "6": "I-QUANTITY",
+    "7": "B-ICE_LEVEL",
+    "8": "I-ICE_LEVEL",
+    "9": "B-SUGAR_LEVEL",
+    "10": "I-SUGAR_LEVEL",
+    "11": "B-TOPPING",
+    "12": "I-TOPPING",
+    "13": "B-MILK_ALTERNATIVE",
+    "14": "I-MILK_ALTERNATIVE"
+  }
+}

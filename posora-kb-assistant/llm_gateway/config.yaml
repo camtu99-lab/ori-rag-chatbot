@@ -1,0 +1,55 @@
+# LiteLLM Proxy configuration.
+# Application code only knows aliases below; providers stay behind Gateway.
+
+model_list:
+  - model_name: dmp-chat
+    litellm_params:
+      model: os.environ/GATEWAY_GROQ_MODEL
+      api_key: os.environ/GROQ_API_KEY
+      include_reasoning: false
+      reasoning_effort: low
+
+  - model_name: dmp-chat-gemini
+    litellm_params:
+      model: os.environ/GATEWAY_GEMINI_MODEL
+      api_key: os.environ/GEMINI_API_KEY
+
+  - model_name: dmp-chat-local
+    litellm_params:
+      model: os.environ/GATEWAY_LOCAL_MODEL
+      api_base: os.environ/GATEWAY_LOCAL_API_BASE
+
+  # Dedicated application alias for intent traffic. It currently reuses the
+  # same deployments, but can later have independent model/quota/telemetry.
+  - model_name: dmp-intent
+    litellm_params:
+      model: os.environ/GATEWAY_GROQ_MODEL
+      api_key: os.environ/GROQ_API_KEY
+      include_reasoning: false
+      reasoning_effort: low
+
+  - model_name: dmp-intent-gemini
+    litellm_params:
+      model: os.environ/GATEWAY_GEMINI_MODEL
+      api_key: os.environ/GEMINI_API_KEY
+
+  - model_name: dmp-intent-local
+    litellm_params:
+      model: os.environ/GATEWAY_LOCAL_MODEL
+      api_base: os.environ/GATEWAY_LOCAL_API_BASE
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY
+
+router_settings:
+  num_retries: 1
+  retry_after: 1
+  allowed_fails: 2
+  cooldown_time: 30
+  fallbacks:
+    - dmp-chat:
+        - dmp-chat-gemini
+        - dmp-chat-local
+    - dmp-intent:
+        - dmp-intent-gemini
+        - dmp-intent-local

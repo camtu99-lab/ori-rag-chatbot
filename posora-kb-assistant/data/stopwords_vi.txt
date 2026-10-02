@@ -1,0 +1,42 @@
+# Vietnamese BM25 stopwords
+# Moved verbatim from sparse_retriever.py to keep current behaviour.
+# One normalized token per line.
+quan
+co
+khong
+la
+cua
+va
+cho
+duoc
+nay
+do
+cac
+nhung
+mot
+gi
+sao
+nhu
+the
+nao
+a
+de
+tai
+voi
+toi
+minh
+ban
+neu
+thi
+rat
+cung
+hay
+hoac
+vay
+ma
+nen
+khi
+nhe
+vui
+long
+xin

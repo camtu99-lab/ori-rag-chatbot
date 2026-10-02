@@ -1,0 +1,10 @@
+venv/
+.env
+__pycache__/
+*.pyc
+# Trọng số mô hình (nặng) và model giọng nói
+*.safetensors
+*.bin
+*.onnx
+ner_model/phobert_ner_retrained/
+pass.txt

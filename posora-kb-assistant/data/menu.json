@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "name": "Cà Phê Đen Đá",
+    "category": "Cà phê truyền thống",
+    "price_m": 25000,
+    "price_l": 33000,
+    "description": "Đậm đà vị Robusta truyền thống, thơm nồng, hậu vị đắng thanh."
+  },
+  {
+    "id": 2,
+    "name": "Cà Phê Sữa Đá",
+    "category": "Cà phê truyền thống",
+    "price_m": 29000,
+    "price_l": 37000,
+    "description": "Cà phê phin đắng đậm kết hợp sữa đặc Ngôi Sao Phương Nam."
+  },
+  {
+    "id": 3,
+    "name": "Bạc Xỉu",
+    "category": "Cà phê truyền thống",
+    "price_m": 32000,
+    "price_l": 40000,
+    "description": "Ít đắng, nhiều sữa tươi và chút sữa đặc, điểm xuyết hương cà phê phin."
+  },
+  {
+    "id": 4,
+    "name": "Cà Phê Muối",
+    "category": "Cà phê truyền thống",
+    "price_m": 35000,
+    "price_l": 43000,
+    "description": "Lớp kem muối béo ngậy mặn nhẹ phủ trên nền cà phê phin đậm đà."
+  },
+  {
+    "id": 5,
+    "name": "Cà Phê Trứng",
+    "category": "Cà phê truyền thống",
+    "price_m": 38000,
+    "price_l": 46000,
+    "description": "Kem trứng đánh bông mịn màng, thơm ngậy không bị tanh."
+  },
+  {
+    "id": 6,
+    "name": "Cà Phê Cốt Dừa",
+    "category": "Cà phê truyền thống",
+    "price_m": 38000,
+    "price_l": 46000,
+    "description": "Cà phê phin quyện cùng đá xay cốt dừa béo thơm."
+  },
+  {
+    "id": 7,
+    "name": "Cà Phê Đen Nóng",
+    "category": "Cà phê truyền thống",
+    "price_m": 25000,
+    "price_l": 33000,
+    "description": "Cà phê phin mộc nguyên chất pha nóng."
+  },
+  {
+    "id": 8,
+    "name": "Cà Phê Sữa Nóng",
+    "category": "Cà phê truyền thống",
+    "price_m": 29000,
+    "price_l": 37000,
+    "description": "Cà phê phin pha sữa đặc uống nóng."
+  },
+  {
+    "id": 9,
+    "name": "Espresso Single/Double",
+    "category": "Cà phê máy",
+    "price_m": 30000,
+    "price_l": 40000,
+    "description": "Single: 30k, Double: 40k. Chiết xuất máy áp suất cao."
+  },
+  {
+    "id": 10,
+    "name": "Americano",
+    "category": "Cà phê máy",
+    "price_m": 35000,
+    "price_l": 43000,
+    "description": "Espresso pha loãng với nước tinh khiết, vị đắng nhẹ."
+  },
+  {
+    "id": 11,
+    "name": "Latte",
+    "category": "Cà phê máy",
+    "price_m": 45000,
+    "price_l": 53000,
+    "description": "Espresso hòa quyện cùng sữa tươi thanh trùng béo nhẹ."
+  },
+  {
+    "id": 12,
+    "name": "Cappuccino",
+    "category": "Cà phê máy",
+    "price_m": 45000,
+    "price_l": 53000,
+    "description": "Espresso, sữa nóng và lớp bọt sữa dày xốp mịn."
+  },
+  {
+    "id": 13,
+    "name": "Caramel Macchiato",
+    "category": "Cà phê máy",
+    "price_m": 49000,
+    "price_l": 57000,
+    "description": "Sữa tươi vani, Espresso và vạch sốt Caramel слад ngọt."
+  },
+  {
+    "id": 14,
+    "name": "Mocha Cacao",
+    "category": "Cà phê máy",
+    "price_m": 49000,
+    "price_l": 57000,
+    "description": "Espresso, sốt sô-cô-la đậm đà và sữa tươi."
+  },
+  {
+    "id": 15,
+    "name": "Cold Brew Truyền Thống",
+    "category": "Cà phê cold brew",
+    "price_m": 42000,
+    "price_l": 50000,
+    "description": "Cà phê ủ lạnh 16 giờ, chua nhẹ mượt mà."
+  },
+  {
+    "id": 16,
+    "name": "Cold Brew Cam Sả",
+    "category": "Cà phê cold brew",
+    "price_m": 48000,
+    "price_l": 56000,
+    "description": "Cold brew kết hợp nước cam tươi và hương sả."
+  },
+  {
+    "id": 17,
+    "name": "Trà Đào Sả Cam",
+    "category": "Trà trái cây",
+    "price_m": 38000,
+    "price_l": 46000,
+    "description": "Trà đen, siro đào, sả tươi, cam vàng và đào miếng."
+  },
+  {
+    "id": 18,
+    "name": "Trà Vải Nhài",
+    "category": "Trà trái cây",
+    "price_m": 38000,
+    "price_l": 46000,
+    "description": "Trà xanh hoa nhài thanh khiết kèm trái vải mọng nước."
+  },
+  {
+    "id": 19,
+    "name": "Trà Dâu Tằm Kem Cheese",
+    "category": "Trà trái cây",
+    "price_m": 42000,
+    "price_l": 50000,
+    "description": "Trà ô long dâu tằm phủ lớp kem phô mai béo mặn."
+  },
+  {
+    "id": 20,
+    "name": "Trà Mãng Cầu Tươi",
+    "category": "Trà trái cây",
+    "price_m": 42000,
+    "price_l": 50000,
+    "description": "Trà xanh kết hợp thịt mãng cầu tươi chua ngọt."
+  },
+  {
+    "id": 21,
+    "name": "Trà Ô Long Hạt Lotus",
+    "category": "Trà trái cây",
+    "price_m": 40000,
+    "price_l": 48000,
+    "description": "Trà ô long hạt sen bùi ngậy và củ năng giòn."
+  },
+  {
+    "id": 22,
+    "name": "Trà Xoài Macchiato",
+    "category": "Trà trái cây",
+    "price_m": 40000,
+    "price_l": 48000,
+    "description": "Trà đen mứt xoài chín và lớp kem sữa Macchiato."
+  },
+  {
+    "id": 23,
+    "name": "Trà Tắc Xí Muội",
+    "category": "Trà trái cây",
+    "price_m": 32000,
+    "price_l": 40000,
+    "description": "Nước tắc tươi và xí muội mặn nhẹ giải nhiệt."
+  },
+  {
+    "id": 24,
+    "name": "Trà Chanh Giã Tay Quảng Đông",
+    "category": "Trà trái cây",
+    "price_m": 35000,
+    "price_l": 43000,
+    "description": "Chanh nước thơm đậm đà giã tay kết hợp trà đen."
+  },
+  {
+    "id": 25,
+    "name": "Trà Sữa DMP Truyền Thống",
+    "category": "Trà sữa",
+    "price_m": 35000,
+    "price_l": 43000,
+    "description": "Trà đen đun đậm đà hòa quyện bột sữa béo thơm. Có trân châu."
+  },
+  {
+    "id": 26,
+    "name": "Trà Sữa Ô Long Nướng",
+    "category": "Trà sữa",
+    "price_m": 39000,
+    "price_l": 47000,
+    "description": "Trà ô long sao cháy thơm mùi khói nhẹ, vị béo thơm."
+  },
+  {
+    "id": 27,
+    "name": "Trà Sữa Thái Xanh",
+    "category": "Trà sữa",
+    "price_m": 35000,
+    "price_l": 43000,
+    "description": "Trà thái xanh mát lành đi kèm thạch phô mai."
+  },
+  {
+    "id": 28,
+    "name": "Trà Sữa Phô Mai Tươi",
+    "category": "Trà sữa",
+    "price_m": 42000,
+    "price_l": 50000,
+    "description": "Trà sữa kết hợp viên phô mai tươi dẻo mịn béo ngậy."
+  },
+  {
+    "id": 29,
+    "name": "Matcha Latte Uji",
+    "category": "Trà sữa",
+    "price_m": 45000,
+    "price_l": 53000,
+    "description": "Bột trà xanh Uji Nhật Bản nguyên chất với sữa tươi."
+  },
+  {
+    "id": 30,
+    "name": "Sô-cô-la Đá Xay Cream",
+    "category": "Trà sữa",
+    "price_m": 48000,
+    "price_l": 56000,
+    "description": "Sô-cô-la Bỉ nguyên chất đá xay xịt kem tươi."
+  },
+  {
+    "id": 31,
+    "name": "Sữa Tươi Trân Châu Đường Đen",
+    "category": "Trà sữa",
+    "price_m": 42000,
+    "price_l": 50000,
+    "description": "Sữa tươi Dalat Milk và trân châu đường đen dẻo thơm."
+  },
+  {
+    "id": 32,
+    "name": "Matcha Đá Xay Đậu Đỏ",
+    "category": "Đá xay",
+    "price_m": 49000,
+    "price_l": 57000,
+    "description": "Matcha Uji đá xay phủ kem tươi và đậu đỏ ngọt bùi."
+  },
+  {
+    "id": 33,
+    "name": "Caramel Coffee Freeze",
+    "category": "Đá xay",
+    "price_m": 49000,
+    "price_l": 57000,
+    "description": "Espresso đá xay caramel phủ thạch cà phê giòn."
+  },
+  {
+    "id": 34,
+    "name": "Sinh Tố Bơ Dừa",
+    "category": "Sinh tố",
+    "price_m": 45000,
+    "price_l": 53000,
+    "description": "Bơ sáp Đắc Lắc dẻo quánh xay cùng cốt dừa."
+  },
+  {
+    "id": 35,
+    "name": "Sinh Tố Mango Passion",
+    "category": "Sinh tố",
+    "price_m": 45000,
+    "price_l": 53000,
+    "description": "Xoài chín kết hợp cốt chanh dây chua thanh."
+  },
+  {
+    "id": 36,
+    "name": "Sinh Tố Việt Quất Đá Xay",
+    "category": "Sinh tố",
+    "price_m": 48000,
+    "price_l": 56000,
+    "description": "Việt quất nhập khẩu xay mịn cùng sữa chua."
+  },
+  {
+    "id": 37,
+    "name": "Bánh Croissant Bơ Tỏi",
+    "category": "Bánh ngọt",
+    "price_m": 29000,
+    "price_l": 29000,
+    "description": "Bánh sừng bò nướng giòn rụm thơm bơ tỏi."
+  },
+  {
+    "id": 38,
+    "name": "Bánh Tiramisu Truyền Thống",
+    "category": "Bánh ngọt",
+    "price_m": 35000,
+    "price_l": 35000,
+    "description": "Bánh mềm mịn đậm vị Espresso và rượu Kahlua."
+  },
+  {
+    "id": 39,
+    "name": "Bánh Cheesecake Chanh Dây",
+    "category": "Bánh ngọt",
+    "price_m": 38000,
+    "price_l": 38000,
+    "description": "Bánh phô mai kết hợp sốt chanh dây chua ngọt."
+  },
+  {
+    "id": 40,
+    "name": "Hướng Dương Bắp Bơ",
+    "category": "Đồ ăn kèm",
+    "price_m": 15000,
+    "price_l": 15000,
+    "description": "Hạt hướng dương rang bơ giòn rụm."
+  }
+]

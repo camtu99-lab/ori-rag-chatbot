@@ -1,0 +1,2 @@
+# Dependency mới cho Cross-Encoder Reranker
+sentence-transformers>=3.0
