@@ -46,13 +46,47 @@ class LocalVectorStore(VectorStore):
         return [d for d, _ in self.similarity_search_with_score(query, k)]
 
 
+def _dereference_fastembed_cache():
+    """onnxruntime moi tu choi 'External data path escapes model directory' khi model.onnx va
+    model.onnx_data la symlink tro vao cac thu muc blobs khac nhau. Thay moi symlink trong
+    snapshots/ bang file that (di chuyen blob, khong ton them dung luong)."""
+    import shutil, tempfile
+    cache = os.environ.get("FASTEMBED_CACHE_PATH") or os.path.join(tempfile.gettempdir(), "fastembed_cache")
+    fixed = 0
+    for dirpath, dirnames, filenames in os.walk(cache):
+        if "snapshots" not in Path(dirpath).parts:
+            continue
+        for name in filenames:
+            link = os.path.join(dirpath, name)
+            if not os.path.islink(link):
+                continue
+            target = os.path.realpath(link)
+            if not os.path.isfile(target):
+                continue
+            os.unlink(link)
+            shutil.move(target, link)
+            fixed += 1
+    return fixed
+
+
+def _load_embeddings():
+    from rag.embeddings import get_embeddings
+    try:
+        return get_embeddings()
+    except Exception as e:
+        msg = str(e)
+        if "External data path" not in msg and "escapes model directory" not in msg:
+            raise
+        _dereference_fastembed_cache()
+        return get_embeddings()
+
+
 def _register_vector_store():
     store = {"obj": None}
 
     def get_vector_store():
         if store["obj"] is None:
-            from rag.embeddings import get_embeddings
-            store["obj"] = LocalVectorStore(get_embeddings())
+            store["obj"] = LocalVectorStore(_load_embeddings())
         return store["obj"]
 
     def reset_collection():
